@@ -314,157 +314,157 @@
             "contract": "Initializable",
             "label": "_initialized",
             "type": "t_bool",
-            "src": "JandraToken.sol:690"
+            "src": "JandraTokenV2.sol:690"
           },
           {
             "contract": "Initializable",
             "label": "_initializing",
             "type": "t_bool",
-            "src": "JandraToken.sol:695"
+            "src": "JandraTokenV2.sol:695"
           },
           {
             "contract": "ContextUpgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)50_storage",
-            "src": "JandraToken.sol:862"
+            "src": "JandraTokenV2.sol:862"
           },
           {
             "contract": "ERC20Upgradeable",
             "label": "_balances",
             "type": "t_mapping(t_address,t_uint256)",
-            "src": "JandraToken.sol:1094"
+            "src": "JandraTokenV2.sol:1094"
           },
           {
             "contract": "ERC20Upgradeable",
             "label": "_allowances",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "src": "JandraToken.sol:1096"
+            "src": "JandraTokenV2.sol:1096"
           },
           {
             "contract": "ERC20Upgradeable",
             "label": "_totalSupply",
             "type": "t_uint256",
-            "src": "JandraToken.sol:1098"
+            "src": "JandraTokenV2.sol:1098"
           },
           {
             "contract": "ERC20Upgradeable",
             "label": "_name",
             "type": "t_string_storage",
-            "src": "JandraToken.sol:1100"
+            "src": "JandraTokenV2.sol:1100"
           },
           {
             "contract": "ERC20Upgradeable",
             "label": "_symbol",
             "type": "t_string_storage",
-            "src": "JandraToken.sol:1101"
+            "src": "JandraTokenV2.sol:1101"
           },
           {
             "contract": "ERC20Upgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)45_storage",
-            "src": "JandraToken.sol:1419"
+            "src": "JandraTokenV2.sol:1419"
           },
           {
             "contract": "ERC20BurnableUpgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)50_storage",
-            "src": "JandraToken.sol:2038"
+            "src": "JandraTokenV2.sol:2038"
           },
           {
             "contract": "ERC20SnapshotUpgradeable",
             "label": "_accountBalanceSnapshots",
-            "type": "t_mapping(t_address,t_struct(Snapshots)2941_storage)",
-            "src": "JandraToken.sol:1846"
+            "type": "t_mapping(t_address,t_struct(Snapshots)6762_storage)",
+            "src": "JandraTokenV2.sol:1846"
           },
           {
             "contract": "ERC20SnapshotUpgradeable",
             "label": "_totalSupplySnapshots",
-            "type": "t_struct(Snapshots)2941_storage",
-            "src": "JandraToken.sol:1847"
+            "type": "t_struct(Snapshots)6762_storage",
+            "src": "JandraTokenV2.sol:1847"
           },
           {
             "contract": "ERC20SnapshotUpgradeable",
             "label": "_currentSnapshotId",
-            "type": "t_struct(Counter)798_storage",
-            "src": "JandraToken.sol:1850"
+            "type": "t_struct(Counter)4619_storage",
+            "src": "JandraTokenV2.sol:1850"
           },
           {
             "contract": "ERC20SnapshotUpgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)46_storage",
-            "src": "JandraToken.sol:1985"
+            "src": "JandraTokenV2.sol:1985"
           },
           {
             "contract": "OwnableUpgradeable",
             "label": "_owner",
             "type": "t_address",
-            "src": "JandraToken.sol:886"
+            "src": "JandraTokenV2.sol:886"
           },
           {
             "contract": "OwnableUpgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)49_storage",
-            "src": "JandraToken.sol:942"
+            "src": "JandraTokenV2.sol:942"
           },
           {
             "contract": "EIP712Upgradeable",
             "label": "_HASHED_NAME",
             "type": "t_bytes32",
-            "src": "JandraToken.sol:746"
+            "src": "JandraTokenV2.sol:746"
           },
           {
             "contract": "EIP712Upgradeable",
             "label": "_HASHED_VERSION",
             "type": "t_bytes32",
-            "src": "JandraToken.sol:747"
+            "src": "JandraTokenV2.sol:747"
           },
           {
             "contract": "EIP712Upgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)50_storage",
-            "src": "JandraToken.sol:828"
+            "src": "JandraTokenV2.sol:828"
           },
           {
             "contract": "ERC20PermitUpgradeable",
             "label": "_nonces",
-            "type": "t_mapping(t_address,t_struct(Counter)798_storage)",
-            "src": "JandraToken.sol:1447"
+            "type": "t_mapping(t_address,t_struct(Counter)4619_storage)",
+            "src": "JandraTokenV2.sol:1447"
           },
           {
             "contract": "ERC20PermitUpgradeable",
             "label": "_PERMIT_TYPEHASH",
             "type": "t_bytes32",
-            "src": "JandraToken.sol:1450"
+            "src": "JandraTokenV2.sol:1450"
           },
           {
             "contract": "ERC20PermitUpgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)49_storage",
-            "src": "JandraToken.sol:1515"
+            "src": "JandraTokenV2.sol:1515"
           },
           {
             "contract": "ERC20VotesUpgradeable",
             "label": "_delegates",
             "type": "t_mapping(t_address,t_address)",
-            "src": "JandraToken.sol:1557"
+            "src": "JandraTokenV2.sol:1557"
           },
           {
             "contract": "ERC20VotesUpgradeable",
             "label": "_checkpoints",
-            "type": "t_mapping(t_address,t_array(t_struct(Checkpoint)2266_storage)dyn_storage)",
-            "src": "JandraToken.sol:1558"
+            "type": "t_mapping(t_address,t_array(t_struct(Checkpoint)6087_storage)dyn_storage)",
+            "src": "JandraTokenV2.sol:1558"
           },
           {
             "contract": "ERC20VotesUpgradeable",
             "label": "_totalSupplyCheckpoints",
-            "type": "t_array(t_struct(Checkpoint)2266_storage)dyn_storage",
-            "src": "JandraToken.sol:1559"
+            "type": "t_array(t_struct(Checkpoint)6087_storage)dyn_storage",
+            "src": "JandraTokenV2.sol:1559"
           },
           {
             "contract": "ERC20VotesUpgradeable",
             "label": "__gap",
             "type": "t_array(t_uint256)47_storage",
-            "src": "JandraToken.sol:1780"
+            "src": "JandraTokenV2.sol:1780"
           },
           {
             "contract": "JandraToken",
@@ -507,13 +507,13 @@
           "t_mapping(t_address,t_address)": {
             "label": "mapping(address => address)"
           },
-          "t_mapping(t_address,t_array(t_struct(Checkpoint)2266_storage)dyn_storage)": {
+          "t_mapping(t_address,t_array(t_struct(Checkpoint)6087_storage)dyn_storage)": {
             "label": "mapping(address => struct ERC20VotesUpgradeable.Checkpoint[])"
           },
-          "t_array(t_struct(Checkpoint)2266_storage)dyn_storage": {
+          "t_array(t_struct(Checkpoint)6087_storage)dyn_storage": {
             "label": "struct ERC20VotesUpgradeable.Checkpoint[]"
           },
-          "t_struct(Checkpoint)2266_storage": {
+          "t_struct(Checkpoint)6087_storage": {
             "label": "struct ERC20VotesUpgradeable.Checkpoint",
             "members": [
               {
@@ -535,10 +535,10 @@
           "t_array(t_uint256)47_storage": {
             "label": "uint256[47]"
           },
-          "t_mapping(t_address,t_struct(Counter)798_storage)": {
+          "t_mapping(t_address,t_struct(Counter)4619_storage)": {
             "label": "mapping(address => struct CountersUpgradeable.Counter)"
           },
-          "t_struct(Counter)798_storage": {
+          "t_struct(Counter)4619_storage": {
             "label": "struct CountersUpgradeable.Counter",
             "members": [
               {
@@ -556,10 +556,298 @@
           "t_array(t_uint256)50_storage": {
             "label": "uint256[50]"
           },
-          "t_mapping(t_address,t_struct(Snapshots)2941_storage)": {
+          "t_mapping(t_address,t_struct(Snapshots)6762_storage)": {
             "label": "mapping(address => struct ERC20SnapshotUpgradeable.Snapshots)"
           },
-          "t_struct(Snapshots)2941_storage": {
+          "t_struct(Snapshots)6762_storage": {
+            "label": "struct ERC20SnapshotUpgradeable.Snapshots",
+            "members": [
+              {
+                "label": "ids",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "values",
+                "type": "t_array(t_uint256)dyn_storage"
+              }
+            ]
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_array(t_uint256)46_storage": {
+            "label": "uint256[46]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "69f9f635ecafc6b691d5e9ca1c34e803d96f6bc11849b034ebe1bb81a940e879": {
+      "address": "0xa94cFbb0158F0E6A66b812D870fbDab684c5301E",
+      "txHash": "0xbe27f5abf8e3122ff93f29ff2a12d748638f08e5a32d7519f4ed58addf90c69d",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "JandraTokenV2.sol:690"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "JandraTokenV2.sol:695"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "JandraTokenV2.sol:862"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "JandraTokenV2.sol:1094"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "JandraTokenV2.sol:1096"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "JandraTokenV2.sol:1098"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "JandraTokenV2.sol:1100"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "JandraTokenV2.sol:1101"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "JandraTokenV2.sol:1419"
+          },
+          {
+            "contract": "ERC20BurnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "JandraTokenV2.sol:2038"
+          },
+          {
+            "contract": "ERC20SnapshotUpgradeable",
+            "label": "_accountBalanceSnapshots",
+            "type": "t_mapping(t_address,t_struct(Snapshots)6762_storage)",
+            "src": "JandraTokenV2.sol:1846"
+          },
+          {
+            "contract": "ERC20SnapshotUpgradeable",
+            "label": "_totalSupplySnapshots",
+            "type": "t_struct(Snapshots)6762_storage",
+            "src": "JandraTokenV2.sol:1847"
+          },
+          {
+            "contract": "ERC20SnapshotUpgradeable",
+            "label": "_currentSnapshotId",
+            "type": "t_struct(Counter)4619_storage",
+            "src": "JandraTokenV2.sol:1850"
+          },
+          {
+            "contract": "ERC20SnapshotUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)46_storage",
+            "src": "JandraTokenV2.sol:1985"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "JandraTokenV2.sol:886"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "JandraTokenV2.sol:942"
+          },
+          {
+            "contract": "EIP712Upgradeable",
+            "label": "_HASHED_NAME",
+            "type": "t_bytes32",
+            "src": "JandraTokenV2.sol:746"
+          },
+          {
+            "contract": "EIP712Upgradeable",
+            "label": "_HASHED_VERSION",
+            "type": "t_bytes32",
+            "src": "JandraTokenV2.sol:747"
+          },
+          {
+            "contract": "EIP712Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "JandraTokenV2.sol:828"
+          },
+          {
+            "contract": "ERC20PermitUpgradeable",
+            "label": "_nonces",
+            "type": "t_mapping(t_address,t_struct(Counter)4619_storage)",
+            "src": "JandraTokenV2.sol:1447"
+          },
+          {
+            "contract": "ERC20PermitUpgradeable",
+            "label": "_PERMIT_TYPEHASH",
+            "type": "t_bytes32",
+            "src": "JandraTokenV2.sol:1450"
+          },
+          {
+            "contract": "ERC20PermitUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "JandraTokenV2.sol:1515"
+          },
+          {
+            "contract": "ERC20VotesUpgradeable",
+            "label": "_delegates",
+            "type": "t_mapping(t_address,t_address)",
+            "src": "JandraTokenV2.sol:1557"
+          },
+          {
+            "contract": "ERC20VotesUpgradeable",
+            "label": "_checkpoints",
+            "type": "t_mapping(t_address,t_array(t_struct(Checkpoint)6087_storage)dyn_storage)",
+            "src": "JandraTokenV2.sol:1558"
+          },
+          {
+            "contract": "ERC20VotesUpgradeable",
+            "label": "_totalSupplyCheckpoints",
+            "type": "t_array(t_struct(Checkpoint)6087_storage)dyn_storage",
+            "src": "JandraTokenV2.sol:1559"
+          },
+          {
+            "contract": "ERC20VotesUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)47_storage",
+            "src": "JandraTokenV2.sol:1780"
+          },
+          {
+            "contract": "JandraTokenV2",
+            "label": "_cap",
+            "type": "t_uint256",
+            "src": "JandraTokenV2.sol:2202"
+          },
+          {
+            "contract": "JandraTokenV2",
+            "label": "preminedAmount",
+            "type": "t_uint256",
+            "src": "JandraTokenV2.sol:2203"
+          },
+          {
+            "contract": "JandraTokenV2",
+            "label": "isMintPremined",
+            "type": "t_bool",
+            "src": "JandraTokenV2.sol:2204"
+          },
+          {
+            "contract": "JandraTokenV2",
+            "label": "isMinter",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "JandraTokenV2.sol:2206"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)"
+          },
+          "t_mapping(t_address,t_array(t_struct(Checkpoint)6087_storage)dyn_storage)": {
+            "label": "mapping(address => struct ERC20VotesUpgradeable.Checkpoint[])"
+          },
+          "t_array(t_struct(Checkpoint)6087_storage)dyn_storage": {
+            "label": "struct ERC20VotesUpgradeable.Checkpoint[]"
+          },
+          "t_struct(Checkpoint)6087_storage": {
+            "label": "struct ERC20VotesUpgradeable.Checkpoint",
+            "members": [
+              {
+                "label": "fromBlock",
+                "type": "t_uint32"
+              },
+              {
+                "label": "votes",
+                "type": "t_uint224"
+              }
+            ]
+          },
+          "t_uint32": {
+            "label": "uint32"
+          },
+          "t_uint224": {
+            "label": "uint224"
+          },
+          "t_array(t_uint256)47_storage": {
+            "label": "uint256[47]"
+          },
+          "t_mapping(t_address,t_struct(Counter)4619_storage)": {
+            "label": "mapping(address => struct CountersUpgradeable.Counter)"
+          },
+          "t_struct(Counter)4619_storage": {
+            "label": "struct CountersUpgradeable.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_mapping(t_address,t_struct(Snapshots)6762_storage)": {
+            "label": "mapping(address => struct ERC20SnapshotUpgradeable.Snapshots)"
+          },
+          "t_struct(Snapshots)6762_storage": {
             "label": "struct ERC20SnapshotUpgradeable.Snapshots",
             "members": [
               {

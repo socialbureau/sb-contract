@@ -1,0 +1,83 @@
+➜  sb-token git:(master) ✗ truffle deploy --network testnet --reset
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'testnet'
+> Network id:      97
+> Block gas limit: 29999542 (0x1c9c1b6)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x24c1f80708f3f0c16f48d95321493ad9609d6ae427cc6e4932d0814d15d5646c
+   > Blocks: 1            Seconds: 4
+   > contract address:    0xCa860Bb4839ef64d654Fbb0B8a29A9E30c9DFfbe
+   > block number:        14340596
+   > block timestamp:     1637596877
+   > account:             0x3eaB2665c467810CFe8c6B065C3C0899AF0A9b07
+   > balance:             2.480889395
+   > gas used:            153922 (0x25942)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00153922 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00153922 ETH
+
+
+2_deploy_upgradable_jandra.js
+=============================
+
+   Replacing 'JandraToken'
+   -----------------------
+   > transaction hash:    0x4603ed45ef3053bcff01d275dff0180786b6fa88a09a58f6e3308f238f441c28
+   > Blocks: 1            Seconds: 4
+   > contract address:    0xd741caF17470bcFf911509763Ae89a016fa91990
+   > block number:        14340603
+   > block timestamp:     1637596898
+   > account:             0x3eaB2665c467810CFe8c6B065C3C0899AF0A9b07
+   > balance:             2.453876695
+   > gas used:            2658980 (0x2892a4)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0265898 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0xd3094bf0ef7b3eede0e9a393a90b24beb0e2f7f2d31905777b7e918b9532e26f
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x7A278454999202abCB8BbC4F75c3d0763A354818
+   > block number:        14340608
+   > block timestamp:     1637596913
+   > account:             0x3eaB2665c467810CFe8c6B065C3C0899AF0A9b07
+   > balance:             2.446169475
+   > gas used:            770722 (0xbc2a2)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00770722 ETH
+
+Deployed 0x7A278454999202abCB8BbC4F75c3d0763A354818
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.03429702 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.03583624 ETH
