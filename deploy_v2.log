@@ -1,0 +1,8 @@
+➜  jutc-token git:(master) ✗ truffle run verify MasterChefWhitelisted --network mainnet
+Verifying MasterChefWhitelisted
+Pass - Verified: https://bscscan.com/address/0xfb0C5A64eD0559Ea2F84a5D5075f67105c75e8b3#code
+Successfully verified 1 contract(s).
+➜  jutc-token git:(master) ✗ truffle run verify MasterChefPublic --network mainnet
+Verifying MasterChefPublic
+Pass - Verified: https://bscscan.com/address/0x60B4f66de1B8168DEA8f3c5108738FAd8D16d8b5#code
+Successfully verified 1 contract(s).
