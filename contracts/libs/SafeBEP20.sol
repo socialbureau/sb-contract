@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.6.0 <0.8.8;
+pragma solidity >=0.6.0 <=0.8.11;
 
 import "./IBEP20.sol";
 import "./SafeMath.sol";

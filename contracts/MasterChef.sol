@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.6.0 <0.8.11;
+pragma solidity >=0.6.0 <=0.8.11;
 
 
 import "./JandraToken.sol";
 import "./libs/SafeBEP20.sol";
 import "./libs/IBEP20.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "./libs/ReentrancyGuard.sol";
 
 
 abstract contract Context {
@@ -83,7 +83,7 @@ abstract contract Ownable is Context {
 // distributed and the community can show to govern itself.
 //
 // Have fun reading it. Hopefully it's bug-free. God bless.
-contract MasterChef is Ownable {
+contract MasterChef is Ownable, ReentrancyGuard {
     using SafeMath for uint256;
     using SafeBEP20 for IBEP20;
 
@@ -160,7 +160,7 @@ contract MasterChef is Ownable {
     // Add a new lp to the pool. Can only be called by the owner.
     // XXX DO NOT add the same LP token more than once. Rewards will be messed up if you do.
     function add(uint256 _allocPoint, IBEP20 _lpToken, uint16 _depositFeeBP, bool _withUpdate) public onlyOwner {
-        require(!existedStaking[_lpToken], "The staking token is duplicated");
+        require(!existedStaking[address(_lpToken)], "The staking token is duplicated");
         require(_depositFeeBP <= 10000, "add: invalid deposit fee basis points");
         if (_withUpdate) {
             massUpdatePools();
