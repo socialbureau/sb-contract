@@ -1,4 +1,5 @@
 {
+  "name":"sb-contracts",
   "devDependencies": {
     "@openzeppelin/truffle-upgrades": "^1.11.0"
   },
