@@ -3,7 +3,7 @@
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 /**
  * @dev Wrappers over Solidity's uintXX/intXX casting operators with added overflow
@@ -246,7 +246,7 @@ library SafeCastUpgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 /**
  * @dev Elliptic Curve Digital Signature Algorithm (ECDSA) operations.
@@ -468,7 +468,7 @@ library ECDSAUpgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 /**
  * @dev Interface of the ERC20 Permit extension allowing approvals to be made via signatures, as defined in
@@ -530,7 +530,7 @@ interface IERC20PermitUpgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 /**
  * @title Counters
@@ -575,7 +575,7 @@ library CountersUpgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 /**
  * @dev Standard math utilities missing in the Solidity language.
@@ -620,7 +620,7 @@ library MathUpgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 /**
@@ -669,7 +669,7 @@ library ArraysUpgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 /**
  * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed
@@ -718,7 +718,7 @@ abstract contract Initializable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 
@@ -832,7 +832,7 @@ abstract contract EIP712Upgradeable is Initializable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 /**
@@ -866,7 +866,7 @@ abstract contract ContextUpgradeable is Initializable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 
@@ -946,7 +946,7 @@ abstract contract OwnableUpgradeable is Initializable, ContextUpgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -1030,7 +1030,7 @@ interface IERC20Upgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 /**
@@ -1059,7 +1059,7 @@ interface IERC20MetadataUpgradeable is IERC20Upgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 
@@ -1423,7 +1423,7 @@ contract ERC20Upgradeable is Initializable, ContextUpgradeable, IERC20Upgradeabl
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 
@@ -1519,7 +1519,7 @@ abstract contract ERC20PermitUpgradeable is Initializable, ERC20Upgradeable, IER
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 
@@ -1784,7 +1784,7 @@ abstract contract ERC20VotesUpgradeable is Initializable, ERC20PermitUpgradeable
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 
@@ -1989,7 +1989,7 @@ abstract contract ERC20SnapshotUpgradeable is Initializable, ERC20Upgradeable {
 
 
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 
 

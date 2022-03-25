@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 
-// pragma solidity ^0.6.12;
-pragma solidity >=0.6.0 <0.8.8;
+pragma solidity >=0.6.0 <0.8.11;
 
 
 import "./JandraToken.sol";
 import "./libs/SafeBEP20.sol";
 import "./libs/IBEP20.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 
 abstract contract Context {
@@ -155,9 +155,12 @@ contract MasterChef is Ownable {
         return poolInfo.length;
     }
 
+    mapping(address => bool) public existedStaking;
+
     // Add a new lp to the pool. Can only be called by the owner.
     // XXX DO NOT add the same LP token more than once. Rewards will be messed up if you do.
     function add(uint256 _allocPoint, IBEP20 _lpToken, uint16 _depositFeeBP, bool _withUpdate) public onlyOwner {
+        require(!existedStaking[_lpToken], "The staking token is duplicated");
         require(_depositFeeBP <= 10000, "add: invalid deposit fee basis points");
         if (_withUpdate) {
             massUpdatePools();
@@ -206,8 +209,10 @@ contract MasterChef is Ownable {
     // Update reward variables for all pools. Be careful of gas spending!
     function massUpdatePools() public {
         uint256 length = poolInfo.length;
-        for (uint256 pid = 0; pid < length; ++pid) {
-            updatePool(pid);
+        if(poolInfo.length < 10) {
+            for (uint256 pid = 0; pid < length; ++pid) {
+                updatePool(pid);
+            }
         }
     }
 
@@ -224,8 +229,17 @@ contract MasterChef is Ownable {
         }
         uint256 multiplier = getMultiplier(pool.lastRewardBlock, block.number);
         uint256 eggReward = multiplier.mul(eggPerBlock).mul(pool.allocPoint).div(totalAllocPoint);
-        egg.mintTo(devaddr, eggReward.div(10));
-        egg.mintTo(address(this), eggReward);
+        // egg.mintTo(devaddr, eggReward.div(10));
+        // egg.mintTo(address(this), eggReward);
+
+        if(egg.totalSupply().add(eggReward.div(10)).add(eggReward) <= egg.cap() ){
+            egg.mintTo(devaddr, eggReward.div(10));
+            egg.mintTo(address(this), eggReward);
+        } else {
+            egg.mintTo(devaddr, (egg.cap().sub(egg.totalSupply())).div(11)); 
+            egg.mintTo(address(this), (egg.cap().sub(egg.totalSupply())).mul(10).div(11));
+        }
+
         pool.accEggPerShare = pool.accEggPerShare.add(eggReward.mul(1e12).div(lpSupply));
         pool.lastRewardBlock = block.number;
     }
@@ -256,7 +270,7 @@ contract MasterChef is Ownable {
     }
 
     // Withdraw LP tokens from MasterChef.
-    function withdraw(uint256 _pid, uint256 _amount) public {
+    function withdraw(uint256 _pid, uint256 _amount) public nonReentrant {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
         require(user.amount >= _amount, "withdraw: not good");
@@ -305,9 +319,11 @@ contract MasterChef is Ownable {
         feeAddress = _feeAddress;
     }
 
+    event UpdateEmissionRate(uint256 _eggPerBlock);
     //Pancake has to add hidden dummy pools inorder to alter the emission, here we make it simple and transparent to all.
     function updateEmissionRate(uint256 _eggPerBlock) public onlyOwner {
         massUpdatePools();
         eggPerBlock = _eggPerBlock;
+        emit UpdateEmissionRate(_eggPerBlock);
     }
 }
